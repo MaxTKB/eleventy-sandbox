@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; color: #1a1a1a; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; border-bottom: 1px solid #ddd; flex-wrap: wrap; gap: 12px; }
+    header a { color: inherit; text-decoration: none; }
+    .site-name { font-weight: 600; font-size: 1.1rem; }
+    nav { display: flex; gap: 18px; font-size: 0.9rem; }
+    main { padding: 24px; max-width: 800px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="site-name" href="{{ '/' | url }}">MC Speedrun Dictionary</a>
+    <nav>
+      <a href="{{ '/dictionary/' | url }}">Dictionary</a>
+      <a href="{{ '/resources/' | url }}">Resources</a>
+      <a href="{{ '/credits/' | url }}">Credits</a>
+      <a href="{{ '/contact/' | url }}">Contact / help</a>
+    </nav>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "word-one",
+    "term": "Word here",
+    "alternates": [
+      { "text": "Abbreviation here", "kind": "abbreviation" },
+      { "text": "Alternate spelling here", "kind": "spelling" }
+    ],
+    "definitions": [
+      {
+        "partOfSpeech": "part of speech here",
+        "text": "First definition text goes here.",
+        "examples": [
+          "First example sentence goes here.",
+          "A second example, if this definition needs more than one."
+        ]
+      },
+      {
+        "partOfSpeech": "a different part of speech, if this word has more than one meaning",
+        "text": "Second definition text goes here.",
+        "examples": [
+          "Example sentence for the second meaning."
+        ]
+      }
+    ],
+    "related": ["word-two"],
+    "notConfusedWith": [
+      { "id": "word-two", "note": "Explanation of how these two terms differ goes here." }
+    ],
+    "origin": "Where this term came from, if known.",
+    "dateAdded": "2026-09-20"
+  },
+  {
+    "id": "word-two",
+    "term": "Another word here",
+    "alternates": [],
+    "definitions": [
+      {
+        "partOfSpeech": "part of speech here",
+        "text": "A definition with just one example, since that's the minimum every definition needs.",
+        "examples": [
+          "One example sentence."
+        ]
+      }
+    ],
+    "related": ["word-one"],
+    "notConfusedWith": [],
+    "origin": null,
+    "dateAdded": "2026-09-24"
+  }
+]
